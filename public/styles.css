@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8f5e9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Main Container */
+#mainContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Notification Container */
+#notificationContainer {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.notification {
+    display: inline-block;
+    position: relative;
+}
+
+.icon {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+/* Content Container */
+#contentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#contactsListContainer, #eventsListContainer, #unreadEmailsContainer, #emailSummaryContainer {
+    flex: 1 1 calc(50% - 40px);
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+    font-size: 22px;
+    color: #004d40;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.summary-btn {
+    background-color: #1e88e5;
+    margin-top: 10px;
+}
+
+.summary-btn:hover {
+    background-color: #1565c0;
+}
+
+/* Event-specific Styles */
+#eventsListContainer ul li {
+    background-color: #e3f2fd;
+    border-color: #90caf9;
+}
+
+.event-title {
+    font-weight: bold;
+    color: #1976d2;
+}
+
+.event-time {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Email Summary Container */
+#emailSummaryContainer {
+    background-color: #fff3e0;
+    border-color: #ffcc80;
+    padding: 20px;
+}
+
+#emailSummaryContent, #textGeneratingContent {
+    margin-top: 20px;
+}
+
+/* Clearfix for content container */
+#contentContainer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.text-generation, .send-email, .congratulate-btn {
+    background-color: #21952b;
+    margin-top: 10px;
+}
+
+.text-generation:hover, .send-email:hover, .congratulate-btn:hover {
+    background-color: #0e5514;
+}

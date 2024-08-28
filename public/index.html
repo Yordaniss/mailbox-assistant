@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant 🧘</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="contentContainer">
+            <div id="emailsPerDayContainer">
+                <h2>Emails Per Day This Week:</h2>
+                <ul id="emailsPerDayList"></ul>
+            </div>
+
+            <div id="contactsListContainer">
+                <h2>Contact Birthdays:</h2>
+                <ul id="contactList"></ul>
+            </div>
+
+            <div id="eventsListContainer">
+                <h2>Events:</h2>
+                <ul id="eventList"></ul>
+            </div>
+
+            <div id="unreadEmailsContainer">
+                <div id="notificationContainer">
+                    <div class="notification">
+                        <span class="icon">🔔</span>
+                        <span class="badge" id="unreadCount">0</span>
+                    </div>
+                </div>
+                <h2>Unread Emails:</h2>
+                <ul id="unreadedEmailList"></ul>
+            </div>
+
+            <div id="emailSummaryContainer">
+                <h2>Email Response:</h2>
+                <div id="emailSummaryContent"></div>
+                <div id="textGeneratingContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
